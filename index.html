@@ -2,6 +2,7 @@
 <html lang="es">
 
   <head>
+
     <meta charset="UTF-8">
     <title>Gerónimo Jaramillo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,32 +10,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Charm:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/proyectos.css">
+
   </head>
 
   <body>
+
     <div class="contenedor">
 
-      <!Esta es la parte izquierda de la pagina, va a tener mi foto, mi nombre, despues añadirle botones, portafolio, y otras chimbaditas que se me vayan ocurriendo>
+    <!Esta es la parte izquierda de la pagina, va a tener mi foto, mi nombre, despues añadirle botones, portafolio, y otras cosas que se me vayan ocurriendo>
       <div class="columna izquierda">
-        <img src="assets/gato.jpg" alt="Mi futura foto para mi portafolio" class="imagen-circular animacion-slide-in-left">
-        <p class="alegreya-regular animacion-slide-in-left nombre">
-          Gerónimo Jaramillo <br>
-          Desarrollador
-        </p>
+        <div class="contenido-sticky">
+          <img src="assets/gato.jpg" alt="Mi futura foto para mi portafolio" class="imagen-circular animacion-slide-in-left">
+          <p class="alegreya-regular animacion-slide-in-left nombre">
+            Gerónimo Jaramillo <br>
+            Desarrollador
+          </p>
+          <nav>
+            <a href="#sobre-mi" class="alegreya-regular">Sobre mí</a>
+          </nav>
+        </div>
       </div>
+
+    <!Estos serán los elementos de la columna derecha, dado el click del usuario en algun botón de la columna izquierda se mostrá el contenido correspondiente>
       <div class="columna derecha">
-        <h1 class="alegreya-regular animacion-slide-in-right">
+
+      <! Contenido sobre mí, aqui doy un muy breve introducción sobre quien soy y de que se trata esta página>
+        <h1 class="animacion-slide-in-right">
           Sobre mí
         </h1>
         <p class="alegreya-regular animacion-slide-in-right">
-          ¡Hola! mi nombre es Gerónimo Jaramillo, Actualmente soy un estudiante de ingenieria de sistemas de la universidad del quindío, y me gusta el tusi.
+          ¡Hola! mi nombre es Gerónimo Jaramillo, Actualmente soy un estudiante de ingenieria de sistemas de la universidad del quindío, esta página servirá para mostrar mi portafolio.
         </p>
-        <img src="assets/yummy.jpg" alt="Imagen de referencia en el apartadod de sobre mi" class="animacion-slide-in-right imagen-contenido">
-        <h2 class = "alegreya-regular animacion-slide-in-right">
+
+      <! Este contenido son los elementos del portafolio, donde cada tarjeta me indica un proyecto, y esta tarjeta 
+      tiene un título que redirecciona al usuario al repositorio en GitHub, una breve descripción del proyecto y 
+      una imagen/icono que da una idea de lo que va la aplicación (Si el proyecto merece la pena, le haré una página 
+      dedicada al proyecto)>
+      
+        <h2 class = "animacion-slide-in-right">
           Portafolio
         </h2>
+
         <div class="proyecto">
-          <! --------proyecto 1------------>
+        <! --------proyecto 1------------>
           <div class="contenido-proyecto">
             <div class="info-proyecto">
               <a href="https://github.com/GeroJagar/EstructuraDatosProyectoFinal" target="_blank" class="titulo-proyecto">Actually</a>
@@ -47,6 +65,8 @@
             <img src="assets/terminal.png" alt="Icono Proyecto 1" class="icono-proyecto">
           </div>
         </div>
+        <! ----- Fin proyecto 1--------->
+
         <! --------proyecto 2----------->
         <div class="proyecto">
           <div class="contenido-proyecto" style="animation-delay: 0.3s;">
@@ -59,6 +79,8 @@
             <img src="assets/terminal.png" alt="Icono Proyecto 1" class="icono-proyecto">
           </div>
         </div>
+        <! ----- Fin proyecto 2--------->
+
       </div>
     </div>
 

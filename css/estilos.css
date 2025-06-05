@@ -1,13 +1,50 @@
 body {
   margin: 0;
-  height: 100vh;
   background-color: #fefefe;
+  font-family: "Alegreya", serif;
 }
 
 .contenedor {
+  display: flex;
+  min-height: 100vh;
   text-align: center;
 }
 
+.columna {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Columna izquierda */
+.izquierda {
+  flex: 0 0 25%;
+  background-color: #f0f0f0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Hacemos solo su contenido sticky */
+.izquierda .contenido-sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Columna derecha */
+.derecha {
+  flex: 1;
+  background-color: #d0d0d0;
+  padding: 40px;
+}
+
+/* Imagen circular */
 .imagen-circular {
   width: 200px;
   height: 200px;
@@ -16,63 +53,29 @@ body {
   margin-top: 20px;
 }
 
-
-.contenedor {
-  display: flex;
-  align-items: stretch; /* Estira las columnas */
+/* Otros estilos que ya tenés */
+.nombre {
+  font-size: 25px;
+  text-align: center;
 }
 
-.columna {
-  flex: 1;
-  padding: 20px;
-  height: 100%;
-}
-
-.izquierda {
-  flex: 0 0 25%;
-  background-color: #f0f0f0;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-}
-
-.derecha {
-   flex: 1;
-  background-color: #d0d0d0;
-}
-
-/* Fuente que me gustó y que voy a usar para toda la página*/
 .alegreya-regular {
-  font-family: "Alegreya", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
 }
 
-.alegreya-bold {
-  font-family: "Alegreya", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-h1.alegreya-regular {
-  font-size: 38px;
-  font-weight: bold;
-}
-
-h2.alegreya-regular {
-  font-size: 38px;
-  font-weight: bold;
-}
-
-.nombre{
-  font-size: 25px;
-}
-
+/* Animaciones */
 .animacion-slide-in-left {
   animation: slideInLeft 0.6s ease-out both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alegreya', serif; /* o la fuente que uses */
+  font-size: 32px;     /* mismo tamaño que .alegreya-regular */
+  font-weight: 700;    /* para que estén en negrita */
+  font-style: normal;
+  text-align: center;
 }
 
 @keyframes slideInLeft {
@@ -84,12 +87,4 @@ h2.alegreya-regular {
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-.imagen-contenido {
-  width: 40%;
-  height: auto;
-  max-width: 40%;
-  display: block;
-  margin: 20px auto;
 }
