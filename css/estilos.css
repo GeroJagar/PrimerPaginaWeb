@@ -82,7 +82,10 @@ h2.alegreya-regular {
   }
 }
 
-img {
+.imagen-contenido {
   width: 40%;
   height: auto;
+  max-width: 40%;
+  display: block;
+  margin: 20px auto;
 }
