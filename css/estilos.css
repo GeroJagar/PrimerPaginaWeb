@@ -19,17 +19,21 @@ body {
 
 .contenedor {
   display: flex;
-  height: 100vh; /* Ocupa toda la altura de la ventana */
+  align-items: stretch; /* Estira las columnas */
 }
 
 .columna {
   flex: 1;
   padding: 20px;
+  height: 100%;
 }
 
 .izquierda {
   flex: 0 0 25%;
   background-color: #f0f0f0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
 .derecha {
