@@ -8,19 +8,6 @@ body {
   text-align: center;
 }
 
-#mostrarGato {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-}
-
-#gato {
-  margin-top: 20px;
-  max-width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #999;
-}
-
 .imagen-circular {
   width: 200px;
   height: 200px;
