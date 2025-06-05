@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #fefefe;
+}
+
+.contenedor {
+  text-align: center;
+}
+
+#mostrarGato {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#gato {
+  margin-top: 20px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #999;
+}
+
+.imagen-circular {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+
+.contenedor {
+  display: flex;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.columna {
+  flex: 1;
+  padding: 20px;
+}
+
+.izquierda {
+  flex: 0 0 25%;
+  background-color: #f0f0f0;
+}
+
+.derecha {
+   flex: 1;
+  background-color: #d0d0d0;
+}
+
+/* Fuente que me gustó y que voy a usar para toda la página*/
+.alegreya-regular {
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 23px;
+}
+
+.alegreya-bold {
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1.alegreya-regular {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.nombre{
+  font-size: 25px;
+}
+
+.animacion-slide-in-left {
+  animation: slideInLeft 0.6s ease-out both;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
